@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Listen Live — LITT103.FM</title>
+  <meta name="description" content="Stream LITT103.FM live: clean hip hop, 24/7.">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true"></div>
+      <a class="brand-name" href="index.html">LITT103.FM</a>
+    </div>
+    <nav class="nav">
+      <a href="listen.html">Listen Live</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merch</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="submit.html">Submit Music</a>
+      <a class="btn primary" href="listen.html">Listen Now</a>
+      <div class="hamburger" aria-label="Menu">☰</div>
+    </div>
+  </div>
+</header>
+<div class="player-bar">
+  <div class="container" style="display:flex;align-items:center;gap:16px;justify-content:space-between;">
+    <div class="player-title">LISTEN LIVE NOW</div>
+    <div class="player-controls">
+      <button id="play-toggle" class="pill">Play</button>
+      <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7" />
+    </div>
+  </div>
+</div>
+
+<audio id="live-audio" src="" preload="none"></audio>
+
+<section class="hero" style="padding:64px 0 32px">
+  <div class="container">
+    <h1 class="title">Listen Live</h1>
+    <p class="subtitle">Tap play to stream. Clean hip hop — family safe, culture first.</p>
+    <div class="hero-ctas">
+      <button id="play-toggle" class="btn primary">Play</button>
+      <div class="pill">Volume <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7" style="margin-left:8px"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid" style="grid-template-columns: 2fr 1fr; gap:18px">
+      <div class="card">
+        <div class="pad">
+          <h3>Now Playing</h3>
+          <div class="meta">Track info placeholder • 02:34 elapsed</div>
+          <div style="height:160px;margin-top:12px;background:radial-gradient(50% 50% at 50% 30%, #2a0e00, #120600);border-radius:12px"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pad">
+          <h3>Coming Up Next</h3>
+          <ul style="margin:12px 0 0 18px; color:var(--muted)">
+            <li>Midday Mix — DJ Flow</li>
+            <li>Community Spotlight — DJ Ember</li>
+            <li>Night Shift — DJ Ash</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Featured Shows</h2>
+    <div class="grid cards">
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Morning Heat</h3><div class="meta">Weekdays • 6–8 AM</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Midday Mix</h3><div class="meta">Daily • 12–2 PM</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Night Shift</h3><div class="meta">Weeknights • 8–10 PM</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>On-Demand Replays</h3><div class="meta">Curated highlights</div></div></article>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container row">
+    <div>© 2025 LITT103.FM — Clean Hip Hop Radio</div>
+    <div class="links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Twitter/X</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

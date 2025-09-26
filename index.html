@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>LITT103.FM — Clean Hip Hop Radio</title>
+  <meta name="description" content="LITT103.FM — Clean hip hop radio, shows, events, and community. Listen live now.">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true"></div>
+      <a class="brand-name" href="index.html">LITT103.FM</a>
+    </div>
+    <nav class="nav">
+      <a href="listen.html">Listen Live</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merch</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="submit.html">Submit Music</a>
+      <a class="btn primary" href="listen.html">Listen Now</a>
+      <div class="hamburger" aria-label="Menu">☰</div>
+    </div>
+  </div>
+</header>
+<div class="player-bar">
+  <div class="container" style="display:flex;align-items:center;gap:16px;justify-content:space-between;">
+    <div class="player-title">LISTEN LIVE NOW</div>
+    <div class="player-controls">
+      <button id="play-toggle" class="pill">Play</button>
+      <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7" />
+    </div>
+  </div>
+</div>
+
+<audio id="live-audio" src="" preload="none"></audio>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="title">LITT103.FM</h1>
+    <p class="subtitle">Your frequency for clean hip hop — no profanity, just heat. Tap in 24/7, book a DJ slot, submit your music, and join the community.</p>
+    <div class="hero-ctas">
+      <a class="btn primary" href="listen.html">Listen Live</a>
+      <a class="btn" href="merch.html">Shop Merch</a>
+      <a class="btn" href="submit.html">Submit Music</a>
+      <a class="btn" href="work.html">Book a DJ Slot</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Featured Content</h2>
+    <div class="grid cards" data-carousel>
+      <div class="carousel-track" style="display:flex;gap:16px;">
+        <article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #1</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #2</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #3</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #4</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #5</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #6</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #7</h3><div class="meta">Artist • Show • Exclusive</div></div></article><article class="card" style="min-width:260px"><div class="thumb"></div><div class="pad"><h3>Featured #8</h3><div class="meta">Artist • Show • Exclusive</div></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Weekly Show Schedule</h2>
+    <div class="card">
+      <div class="pad">
+        <table class="table">
+          <thead><tr><th>Time</th><th>Show</th><th>Host</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td>6–8 AM</td><td>Morning Heat</td><td>DJ Ember</td><td><span class="badge">Live</span></td></tr>
+            <tr><td>12–2 PM</td><td>Midday Mix</td><td>DJ Flow</td><td><span class="badge hot">Live Now</span></td></tr>
+            <tr><td>8–10 PM</td><td>Night Shift</td><td>DJ Ash</td><td><span class="badge">Replay</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>News & Community</h2>
+    <div class="grid cards">
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Blog: Flame Thrower Fridays Recap</h3><div class="meta">Latest highlights + playlist</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Community Contest</h3><div class="meta">Enter to win — terms apply</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Upcoming Events</h3><div class="meta">Workshops, concerts, meetups</div></div></article>
+      <article class="card"><div class="thumb"></div><div class="pad"><h3>Spotlight: Rising Artist</h3><div class="meta">Submit your music for a feature</div></div></article>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container row">
+    <div>© 2025 LITT103.FM — Clean Hip Hop Radio</div>
+    <div class="links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Twitter/X</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
