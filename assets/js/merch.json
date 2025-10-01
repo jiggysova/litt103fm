@@ -1,0 +1,38 @@
+[
+  {
+    "title": "LITT103.FM Tee",
+    "price": "$25",
+    "details": "Sizes S–XL",
+    "img": "assets/img/shirt.png",
+    "alt": "Black LITT103.FM branded tee shirt",
+    "cta": "Add to Cart",
+    "link": "#"
+  },
+  {
+    "title": "Volcano Hoodie",
+    "price": "$45",
+    "details": "Sizes M–XXL",
+    "img": "assets/img/hoodie.png",
+    "alt": "Volcano-inspired LITT103.FM hoodie",
+    "cta": "Add to Cart",
+    "link": "#"
+  },
+  {
+    "title": "Station Cap",
+    "price": "$20",
+    "details": "Adjustable",
+    "img": "assets/img/cap.png",
+    "alt": "Black station cap with LITT103.FM logo",
+    "cta": "Add to Cart",
+    "link": "#"
+  },
+  {
+    "title": "Sticker Pack",
+    "price": "$10",
+    "details": "5 designs",
+    "img": "assets/img/sticker.png",
+    "alt": "Pack of 5 LITT103.FM stickers",
+    "cta": "Add to Cart",
+    "link": "#"
+  }
+]

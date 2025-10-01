@@ -1,0 +1,781 @@
+/* =========================
+   Global CSS Foundation
+   ========================= */
+
+/* Font Setup */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d; /* dark base */
+  color: #f4f4f4; /* light text */
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+h1.title {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ff4d00; /* accent underline */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Links */
+a {
+  color: #ff4d00;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #ffa366;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #ff4d00;
+  color: #fff;
+  border: none;
+}
+
+.btn.primary:hover {
+  background: #e64500;
+  transform: translateY(-2px);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #ff4d00;
+  border: 2px solid #ff4d00;
+}
+
+.btn.ghost:hover {
+  background: #ff4d00;
+  color: #fff;
+}
+
+/* Layout Containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Card Layout */
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255,77,0,0.4);
+}
+
+.card .thumb {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card .pad {
+  padding: 16px;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  text-align: center;
+  color: #fff;
+}
+
+.hero .subtitle {
+  color: #ccc;
+  margin-top: 12px;
+  font-size: 1.2rem;
+}
+
+/* =========================
+   Header & Navigation
+   ========================= */
+.header {
+  background: #1a1a1a;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  background: #ff4d00;
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: #f4f4f4;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff4d00;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Nav */
+@media(max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  .nav.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    color: #fff;
+  }
+}
+
+/* =========================
+   Player Bar
+   ========================= */
+.player-bar {
+  background: #111;
+  color: #fff;
+  padding: 8px 0;
+  border-top: 2px solid #ff4d00;
+  border-bottom: 2px solid #ff4d00;
+}
+
+.player-title {
+  font-weight: 600;
+  color: #ff4d00;
+  letter-spacing: 1px;
+}
+
+.pill {
+  background: #ff4d00;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pill:hover {
+  background: #e64500;
+}
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
+  background: #1a1a1a;
+  padding: 24px 0;
+  border-top: 2px solid #ff4d00;
+  margin-top: 64px;
+}
+
+.footer .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer .links a {
+  color: #ccc;
+  transition: 0.3s ease;
+}
+
+.footer .links a:hover {
+  color: #ff4d00;
+}
+
+/* =========================
+   Hero Sections
+   ========================= */
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,77,0,0.4) 0%, transparent 70%);
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero .subtitle {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =========================
+   Cards (Events, Merch, Community)
+   ========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(255,77,0,0.35);
+}
+
+.card .thumb {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.card .pad {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.card .meta {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  flex-grow: 1;
+}
+
+/* =========================
+   Forms (Submit Page, Contact, etc.)
+   ========================= */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input, textarea, select {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #f4f4f4;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  border-color: #ff4d00;
+  box-shadow: 0 0 6px rgba(255,77,0,0.6);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Form Labels */
+label {
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 4px;
+}
+
+/* Submit Button */
+form .btn.primary {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+/* =========================
+   Leaderboard & Tables
+   ========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+thead {
+  background: #111;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px 16px;
+  color: #ff4d00;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #ff4d00;
+}
+
+tbody td {
+  padding: 12px 16px;
+  color: #f4f4f4;
+  border-bottom: 1px solid #333;
+}
+
+tbody tr:nth-child(even) {
+  background: #141414;
+}
+
+tbody tr:hover {
+  background: rgba(255,77,0,0.1);
+}
+
+tbody td:first-child {
+  font-weight: 700;
+  color: #ff4d00;
+}
+
+/* =========================
+   Testimonials
+   ========================= */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.testimonial {
+  background: #1a1a1a;
+  border-left: 4px solid #ff4d00;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255,77,0,0.3);
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #f4f4f4;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.testimonial small {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* =========================
+   Fan Gallery
+   ========================= */
+.fan-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.fan-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fan-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255,77,0,0.3);
+}
+
+/* =========================
+   Mobile Polish
+   ========================= */
+@media (max-width: 1024px) {
+  h1.title {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* General Layout */
+  .section {
+    padding: 40px 0;
+  }
+
+  h1.title {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  /* Cards */
+  .grid {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+
+  .card .thumb {
+    height: 180px;
+  }
+
+  /* Forms */
+  form {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  input, textarea, select {
+    font-size: 0.95rem;
+  }
+
+  /* Leaderboard */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none; /* hide headers for mobile */
+  }
+
+  tbody tr {
+    margin-bottom: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  tbody td {
+    border: none;
+    padding: 8px 0;
+    text-align: left;
+  }
+
+  tbody td:first-child {
+    font-weight: 700;
+    color: #ff4d00;
+  }
+
+  /* Gallery */
+  .fan-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .fan-gallery img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.title {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .card .thumb {
+    height: 150px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .player-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .player-controls { margin-top: 8px;
+  }
+}
+/* =========================
+   Animations & Micro-Interactions
+   ========================= */
+
+/* Smooth transitions globally */
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+/* Fade-in on load */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero title + subtitle entrance */
+.hero .title {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero .subtitle {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* Button hover micro-interactions */
+.btn.primary:hover,
+.btn.ghost:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 10px rgba(255,77,0,0.4);
+}
+
+/* Player pill interaction */
+.pill:active {
+  transform: scale(0.95);
+}
+
+/* Card subtle float-in */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Testimonial hover effect */
+.testimonial:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* Gallery hover glow */
+.fan-gallery img:hover {
+  box-shadow: 0 6px 16px rgba(255,77,0,0.4);
+  transform: scale(1.08);
+}
+
+/* =========================
+   Final Polish Touches
+   ========================= */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4d00;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e64500;
+}
+
+/* Text Selection */
+::selection {
+  background: #ff4d00;
+  color: #fff;
+}
+
+/* Focus Outlines (Accessibility) */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff4d00;
+  outline-offset: 2px;
+}
+
+/* Smooth Scroll for anchors */
+html {
+  scroll-behavior: smooth;
+}

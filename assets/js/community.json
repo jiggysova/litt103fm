@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "quote": "🔥 Finally a station I can bump with my kids in the car. Positive vibes only.",
+      "author": "Fan from NJ"
+    },
+    {
+      "quote": "🎧 Submitting my music here gave me my first real radio spin. Much love!",
+      "author": "Independent Artist"
+    },
+    {
+      "quote": "💯 Clean hip hop that still hits hard. This station is different.",
+      "author": "Day 1 Listener"
+    }
+  ],
+  "gallery": [
+    { "src": "assets/img/fan1.jpg", "alt": "Fan photo placeholder 1" },
+    { "src": "assets/img/fan2.jpg", "alt": "Fan photo placeholder 2" },
+    { "src": "assets/img/fan3.jpg", "alt": "Fan photo placeholder 3" },
+    { "src": "assets/img/fan4.jpg", "alt": "Fan photo placeholder 4" }
+  ],
+  "leaderboard": [
+    { "rank": 1, "name": "@HipHopLover", "points": 1200 },
+    { "rank": 2, "name": "@CleanBeats", "points": 950 },
+    { "rank": 3, "name": "@FamFirst", "points": 720 },
+    { "rank": 4, "name": "@StudioKid", "points": 610 }
+  ]
+}

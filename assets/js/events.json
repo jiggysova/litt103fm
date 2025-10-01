@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Summer Jam 2025",
+    "date": "July 15",
+    "location": "Newark, NJ",
+    "description": "Main stage festival with clean hip hop vibes. All ages welcome.",
+    "cta": "Buy Tickets",
+    "link": "#",
+    "img": "assets/img/event1.jpg",
+    "alt": "Crowd enjoying Summer Jam 2025 in Newark"
+  },
+  {
+    "title": "DJ Workshop",
+    "date": "August 2",
+    "location": "Online",
+    "description": "Interactive DJ training with LITT103.FM lineup. Free RSVP required.",
+    "cta": "RSVP Free",
+    "link": "#",
+    "img": "assets/img/event2.jpg",
+    "alt": "DJ at a turntable during an online workshop"
+  },
+  {
+    "title": "Community Meetup",
+    "date": "August 20",
+    "location": "New York, NY",
+    "description": "Networking, freestyles, and live podcast taping with fans + DJs.",
+    "cta": "Reserve Spot",
+    "link": "#",
+    "img": "assets/img/event3.jpg",
+    "alt": "Group of hip hop fans gathered at a community meetup"
+  },
+  {
+    "title": "Artist Showcase",
+    "date": "September 12",
+    "location": "Philadelphia, PA",
+    "description": "Submit your tracks for a chance to perform live and get featured.",
+    "cta": "Submit Music",
+    "link": "submit.html",
+    "img": "assets/img/event4.jpg",
+    "alt": "Artist performing live on stage during a showcase"
+  }
+]

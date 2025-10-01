@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Merch Store — LITT103.FM</title>
+  <meta name="description" content="Shop official LITT103.FM merchandise — tees, hoodies, caps, and stickers. Limited drops, fresh designs.">
+
+  <!-- Canonical + Robots -->
+  <link rel="canonical" href="https://litt103.fm/merch.html">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LITT103.FM">
+  <meta property="og:title" content="Merch Store — LITT103.FM">
+  <meta property="og:description" content="Shop official LITT103.FM merchandise — tees, hoodies, caps, and stickers.">
+  <meta property="og:url" content="https://litt103.fm/merch.html">
+  <meta property="og:image" content="https://litt103.fm/assets/img/og-placeholder.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Merch Store — LITT103.FM">
+  <meta name="twitter:description" content="Shop official LITT103.FM merchandise — tees, hoodies, caps, and stickers.">
+  <meta name="twitter:image" content="https://litt103.fm/assets/img/og-placeholder.jpg">
+
+  <!-- Theme + Favicon -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <link rel="stylesheet" href="assets/css/style.css"/>
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="assets/manifest.json">
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <a class="brand-name" href="index.html">LITT103.FM</a>
+      </div>
+      <nav class="nav">
+        <a href="listen.html">Listen Live</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="events.html">Events</a>
+        <a href="merch.html">Merch</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="actions">
+        <a class="btn ghost" href="submit.html">Submit Music</a>
+        <a class="btn primary" href="listen.html">Listen Now</a>
+        <div class="hamburger" aria-label="Menu">☰</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Player -->
+  <div class="player-bar">
+    <div class="container" style="display:flex;align-items:center;gap:16px;justify-content:space-between;">
+      <div class="player-title">LISTEN LIVE NOW</div>
+      <div class="player-controls">
+        <button id="play-toggle" class="pill">Play</button>
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7" />
+      </div>
+    </div>
+  </div>
+  <audio id="live-audio" src="" preload="none"></audio>
+
+  <!-- Hero -->
+  <section class="hero" style="padding:64px 0 32px">
+    <div class="container">
+      <h1 class="title">Merch Store</h1>
+      <p class="subtitle">Rep LITT103.FM everywhere you go. Limited drops, fresh designs.</p>
+    </div>
+  </section>
+
+  <!-- Merch Grid -->
+  <section class="section">
+  <div class="container">
+    <div id="merch-grid" class="grid cards"></div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container row">
+      <div>© 2025 LITT103.FM — Clean Hip Hop Radio</div>
+      <div class="links">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+        <a href="#">Twitter/X</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+
+  <!-- =======================
+       Analytics Placeholders
+       ======================= -->
+
+  <!-- Google Analytics 4 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Facebook Pixel -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXX'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=XXXXXXXXXX&ev=PageView&noscript=1"/>
+  </noscript>
+  -->
+
+
+</body>
+</html>
